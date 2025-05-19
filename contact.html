@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background-color: white;
+      padding: 30px 40px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 20px;
+      color: #111827;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 13px;
+      color: #6b7280;
+      margin-top: 6px;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 6px;
+      color: #111827;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px 12px;
+      font-size: 14px;
+      background-color: #f3f4f6;
+      border: none;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      resize: none;
+      box-sizing: border-box;
+    }
+
+    input:focus, textarea:focus {
+      outline: 2px solid #2563eb;
+      background-color: white;
+    }
+
+    button {
+      background-color: #111827;
+      color: white;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #1f2937;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out for collaborations or inquiries.</p>
+
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your Name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="your@email.com" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</body>
+</html>
